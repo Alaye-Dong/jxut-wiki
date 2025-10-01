@@ -2,8 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-CN',
   title: "JXUT Wiki",
-  description: "A VitePress Site",
+  description: "江科校园生活指南",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -22,7 +24,21 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }
+    ],
+
+    search: { 
+      provider: 'local'
+    },
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: `Copyright © 2025-${new Date().getFullYear()} JXUT Wiki Team`, 
+    },
+
+    editLink: {
+      pattern: 'https://github.com/Alaye-Dong/jxut-wiki/edit/main/docs/:path',
+      text: '在 GitHub 编辑本页'
+    }
   }
 })

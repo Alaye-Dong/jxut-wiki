@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "JXUT Wiki"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: "江科校园生活指南"
+  tagline: "一站式了解江西科技学院校园生活"
   actions:
     - theme: brand
       text: Markdown Examples
@@ -17,6 +17,8 @@ hero:
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: https://unocss.dev/
+    linkText: 了解更多
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
