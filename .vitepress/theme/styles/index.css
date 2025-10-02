@@ -1,0 +1,4 @@
+@import './vars.css';
+@import 'tailwindcss';
+@source '../../../../src/**/*.md';
+@source '../../**/*.{vue,ts}';

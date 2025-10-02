@@ -1,7 +1,14 @@
 import { defineConfig } from 'vitepress'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      tailwindcss()
+    ]
+  },
+  srcDir: 'src',
   lang: 'zh-CN',
   title: "JXUT Wiki",
   description: "江科校园生活指南",
@@ -27,13 +34,13 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }
     ],
 
-    search: { 
+    search: {
       provider: 'local'
     },
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: `Copyright © 2025-${new Date().getFullYear()} JXUT Wiki Team`, 
+      copyright: `Copyright © 2025-${new Date().getFullYear()} JXUT Wiki Team`,
     },
 
     editLink: {
