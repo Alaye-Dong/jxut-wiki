@@ -8,7 +8,7 @@ export default defineConfig({
       tailwindcss()
     ]
   },
-  srcDir: 'src',
+  srcDir: 'docs',
   lang: 'zh-CN',
   title: "JXUT Wiki",
   description: "江科校园生活指南",

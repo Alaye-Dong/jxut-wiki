@@ -1,4 +1,4 @@
 @import './vars.css';
 @import 'tailwindcss';
-@source '../../../../src/**/*.md';
+@source '../../../../docs/**/*.md';
 @source '../../**/*.{vue,ts}';
