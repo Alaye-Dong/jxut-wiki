@@ -1,5 +1,20 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
+import { generateSidebar } from 'vitepress-sidebar';
+
+const vitePressSidebarOptions = [
+  {
+    debugPrint: true,
+    documentRootPath: '/docs',
+    // resolvePath: '/',
+
+    useTitleFromFileHeading: true,
+		useTitleFromFrontmatter: true,
+		sortMenusByFrontmatterOrder: true,
+		useFolderTitleFromIndexFile: true,
+		useFolderLinkFromIndexFile: true, 
+  }
+];
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -20,15 +35,7 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: generateSidebar(vitePressSidebarOptions),
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }
