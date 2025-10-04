@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "strict": true,
-    "baseUrl": ".",
     "paths": {
       "@theme/*": [".vitepress/theme/*"]
-    }
+    },
+    "strict": true
   },
   "include": ["./.vitepress/**/*"]
 }

@@ -24,7 +24,7 @@ order: 99
   1. 访问 [Node.js 官网](https://nodejs.org/)，下载并安装最新的稳定版本。
   2. 安装完成后，通过命令行输入 `node -v` 和 `npm -v` 确保 Node.js 和 npm 已成功安装。
   3. 安装 pnpm，执行命令：`npm install -g pnpm`。
-  :::
+     :::
 
 - **安装 Git**：
   ::: details 查看详情
@@ -32,14 +32,14 @@ order: 99
   1. 访问 [Git 官网](https://git-scm.com/)，下载并安装适合您操作系统的 Git 版本。
   2. 安装完成后，在命令行中输入 `git --version` 检查 Git 是否已正确安装。
   3. 配置 Git 用户信息：执行 `git config --global user.name "Your Name"` 和 `git config --global user.email "your.email@example.com"`。
-  :::
+     :::
 
 - **安装 Visual Studio Code**：
   ::: details 查看详情
   Visual Studio Code (VS Code) 是一款轻量级、功能强大的源代码编辑器，适合前端开发。可以通过以下步骤安装：
   1. 访问 [VS Code 官网](https://code.visualstudio.com/)，下载并安装最新版的 Visual Studio Code。
   2. 安装完毕后，建议安装一些常用插件，如 Vue (Official)、Lingma 和 git-commit-plugin，提升开发体验。
-  :::
+     :::
 
 ### 初始化项目
 
@@ -53,8 +53,8 @@ order: 99
 git clone https://github.com/Alaye-Dong/jxut-wiki.git
 ```
 
-> [!WARNING] 建议 
-为了更好地进行开发和贡献，建议先在 GitHub 上 🔱 [Fork](https://github.com/Alaye-Dong/jxut-wiki/fork) 该项目到个人账户。可以在自己的仓库中完成开发和验证后，再向源仓库提交 Pull Request>>（[PR](https://github.com/Alaye-Dong/jxut-wiki/pulls)）进行贡献。 
+> [!WARNING] 建议
+> 为了更好地进行开发和贡献，建议先在 GitHub 上 🔱 [Fork](https://github.com/Alaye-Dong/jxut-wiki/fork) 该项目到个人账户。可以在自己的仓库中完成开发和验证后，再向源仓库提交 Pull Request>>（[PR](https://github.com/Alaye-Dong/jxut-wiki/pulls)）进行贡献。
 
 #### 安装项目依赖包
 

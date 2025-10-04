@@ -1,14 +1,13 @@
-// https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './styles/index.css'
+// https://vitepress.dev/guide/custom-theme
 import Layout from './Layout.vue'
+import './styles/index.css'
 
 export default {
   extends: DefaultTheme,
-  Layout: Layout,
-  enhanceApp({ app, router, siteData }) {
+  Layout,
+  enhanceApp() {
     // ...
-  }
+  },
 } satisfies Theme

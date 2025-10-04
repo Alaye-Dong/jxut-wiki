@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
-import { generateSidebar } from 'vitepress-sidebar';
+import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
 const vitePressSidebarOptions = [
   {
@@ -13,35 +13,29 @@ const vitePressSidebarOptions = [
     useFolderLinkFromIndexFile: true,
     includeFolderIndexFile: true,
     sortMenusByFrontmatterOrder: true,
-  }
-];
+  },
+]
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-    plugins: [
-      tailwindcss()
-    ]
+    plugins: [tailwindcss()],
   },
   srcDir: 'docs',
   lang: 'zh-CN',
-  title: "JXUT Wiki",
-  description: "江科校园生活指南",
+  title: 'JXUT Wiki',
+  description: '江科校园生活指南',
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-    ],
+    nav: [{ text: 'Home', link: '/' }],
 
     sidebar: generateSidebar(vitePressSidebarOptions),
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }],
 
     search: {
-      provider: 'local'
+      provider: 'local',
     },
 
     footer: {
@@ -51,7 +45,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/Alaye-Dong/jxut-wiki/edit/main/docs/:path',
-      text: '在 GitHub 编辑本页'
-    }
-  }
+      text: '在 GitHub 编辑本页',
+    },
+  },
 })
