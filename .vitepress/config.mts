@@ -1,5 +1,7 @@
+import type VitePressI18nOptions from 'vitepress-i18n'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
+import { withI18n } from 'vitepress-i18n'
 import { generateSidebar } from 'vitepress-sidebar'
 
 const vitePressSidebarOptions = [
@@ -16,8 +18,12 @@ const vitePressSidebarOptions = [
   },
 ]
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
+const vitePressI18nOptions: VitePressI18nOptions = {
+  locales: ['zhHans'],
+  searchProvider: 'local',
+}
+
+const vitePressOptions = {
   vite: {
     plugins: [tailwindcss()],
   },
@@ -34,10 +40,6 @@ export default defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/Alaye-Dong/jxut-wiki' }],
 
-    search: {
-      provider: 'local',
-    },
-
     footer: {
       message: 'Released under the MIT License.',
       copyright: `Copyright © 2025-${new Date().getFullYear()} JXUT Wiki Team`,
@@ -45,7 +47,9 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/Alaye-Dong/jxut-wiki/edit/main/docs/:path',
-      text: '在 GitHub 编辑本页',
     },
   },
-})
+}
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig(withI18n(vitePressOptions, vitePressI18nOptions))
