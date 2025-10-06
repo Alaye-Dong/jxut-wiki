@@ -1,5 +1,4 @@
 import type VitePressI18nOptions from 'vitepress-i18n'
-import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 import { withI18n } from 'vitepress-i18n'
 import { generateSidebar } from 'vitepress-sidebar'
@@ -25,7 +24,7 @@ const vitePressI18nOptions: VitePressI18nOptions = {
 
 const vitePressOptions = {
   vite: {
-    plugins: [tailwindcss()],
+    configFile: 'vite.config.ts',
   },
   srcDir: 'docs',
   lang: 'zh-CN',
