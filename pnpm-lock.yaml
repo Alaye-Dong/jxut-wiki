@@ -21,6 +21,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.2.5
         version: 2.2.5
+      '@tailwindcss/postcss':
+        specifier: ^4.1.14
+        version: 4.1.14
       eslint:
         specifier: ^9.36.0
         version: 9.37.0(jiti@2.6.1)
@@ -117,6 +120,10 @@ packages:
   '@algolia/requester-node-http@5.39.0':
     resolution: {integrity: sha512-6beG+egPwXmvhAg+m0STCj+ZssDcjrLzf4L05aKm2nGglMXSSPz0cH/rM+kVD9krNfldiMctURd4wjojW1fV0w==}
     engines: {node: '>= 14.0.0'}
+
+  '@alloc/quick-lru@5.2.0':
+    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
+    engines: {node: '>=10'}
 
   '@antfu/eslint-config@5.4.1':
     resolution: {integrity: sha512-x7BiNkxJRlXXs8tIvg0CgMuNo5IZVWkGLMJotCtCtzWUHW78Pmm8PvtXhvLBbTc8683GGBK616MMztWLh4RNjA==}
@@ -789,6 +796,9 @@ packages:
   '@tailwindcss/oxide@4.1.14':
     resolution: {integrity: sha512-23yx+VUbBwCg2x5XWdB8+1lkPajzLmALEfMb51zZUBYaYVPDQvBSD/WYDqiVyBIo2BZFa3yw1Rpy3G2Jp+K0dw==}
     engines: {node: '>= 10'}
+
+  '@tailwindcss/postcss@4.1.14':
+    resolution: {integrity: sha512-BdMjIxy7HUNThK87C7BC8I1rE8BVUsfNQSI5siQ4JK3iIa3w0XyVvVL9SXLWO//CtYTcp1v7zci0fYwJOjB+Zg==}
 
   '@tailwindcss/vite@4.1.14':
     resolution: {integrity: sha512-BoFUoU0XqgCUS1UXWhmDJroKKhNXeDzD7/XwabjkDIAbMnc4ULn5e2FuEuBbhZ6ENZoSYzKlzvZ44Yr6EUDUSA==}
@@ -2560,6 +2570,8 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.39.0
 
+  '@alloc/quick-lru@5.2.0': {}
+
   '@antfu/eslint-config@5.4.1(@vue/compiler-sfc@3.5.22)(eslint-plugin-format@1.0.2(eslint@9.37.0(jiti@2.6.1)))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
@@ -3115,6 +3127,14 @@ snapshots:
       '@tailwindcss/oxide-wasm32-wasi': 4.1.14
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.14
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.14
+
+  '@tailwindcss/postcss@4.1.14':
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      '@tailwindcss/node': 4.1.14
+      '@tailwindcss/oxide': 4.1.14
+      postcss: 8.5.6
+      tailwindcss: 4.1.14
 
   '@tailwindcss/vite@4.1.14(vite@5.4.20(lightningcss@1.30.1))':
     dependencies:

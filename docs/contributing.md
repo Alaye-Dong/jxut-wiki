@@ -89,3 +89,29 @@ pnpm run docs:build
 ```shell
 pnpm run docs:preview
 ```
+
+## 注意
+
+### TailWind CSS
+
+> [vitepress-tailwind](https://github.com/dealenx/vitepress-tailwind/blob/main/README.md)
+
+> [issues](https://github.com/vuejs/vitepress/issues/4904)
+
+在 MD 文件中使用 TailWind CSS ，需要使用 `:::raw` 包裹起来，如：
+```markdown
+:::raw
+<div class="bg-blue-500 text-white p-4 rounded-lg">
+  This is a block styled with Tailwind CSS
+</div>
+:::
+```
+```markdown
+<script setup>
+import Sigma from './.vitepress/theme/components/Sigma.vue'
+</script>
+
+:::raw
+<Sigma />
+:::
+```
