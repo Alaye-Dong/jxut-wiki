@@ -1,4 +1,5 @@
 @import './vars.css';
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 @source '../../../../docs/**/*.md';
 @source '../../**/*.{vue,ts}';
