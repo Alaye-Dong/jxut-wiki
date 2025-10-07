@@ -99,6 +99,7 @@ pnpm run docs:preview
 > [issues](https://github.com/vuejs/vitepress/issues/4904)
 
 在 MD 文件中使用 TailWind CSS ，需要使用 `:::raw` 包裹起来，如：
+
 ```markdown
 :::raw
 <div class="bg-blue-500 text-white p-4 rounded-lg">
@@ -106,6 +107,7 @@ pnpm run docs:preview
 </div>
 :::
 ```
+
 ```markdown
 <script setup>
 import Sigma from './.vitepress/theme/components/Sigma.vue'
@@ -115,6 +117,7 @@ import Sigma from './.vitepress/theme/components/Sigma.vue'
 <Sigma />
 :::
 ```
+
 :::raw
 <div class="overflow-hidden">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">

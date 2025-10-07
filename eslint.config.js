@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import pluginCasePolice from 'eslint-plugin-case-police'
 
 export default antfu(
   {
@@ -7,4 +8,5 @@ export default antfu(
     typescript: true,
     markdown: true,
   },
+  ...pluginCasePolice.configs.recommended,
 )
