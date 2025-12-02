@@ -8,11 +8,9 @@ hero:
   tagline: "一站式了解江西科技学院校园生活"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: introduction
+      link: /introduction
+
 
 features:
   - title: Feature A
